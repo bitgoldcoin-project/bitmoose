@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BitMoose>
+  <DebugLogging>false</DebugLogging>
+  <DefaultUserName>lisa3907.6</DefaultUserName>
+  <DefaultPassword>x</DefaultPassword>
+  <DefaultMinerOption>cudaminer</DefaultMinerOption>
+  <DefaultPool>Give-Me-Coins</DefaultPool>
+  <Miners>
+    <Miner name="Default" pool="Give-Me-Coins" option="cudaminer" arguments="-H 2 -d 0 -i 1 -l auto -C 0" host="stratum+tcp://ftc.give-me-coins.com" port="3336" username="lisa3907.6" password="x" enabled="true" netupdate="false">
+      <Log enabled="false" maxfilesize="1048576" />
+      <CrashRecovery retries="3" interval="60" altminer="" />
+      <Process priority="0" cpuaffinity="" loadprofile="false" windomain="" winusername="" winpassword="" />
+    </Miner>
+  </Miners>
+  <MinerOptions>
+    <MinerOption name="poclbm" path="miners\poclbm\poclbm.exe" argumentformat="{combinedhost}:{port} {args}" arguments="-f 40 -d 0 -w 128 -v --verbose" />
+    <MinerOption name="bfgminer" path="miners\bfgminer\bfgminer.exe" argumentformat=" -o {host}:{port} -u {username} -p {password} -T {args}" arguments="-d 0 -w 128" />
+    <MinerOption name="cgminer" path="miners\cgminer\cgminer.exe" argumentformat=" -o {host}:{port} -u {username} -p {password} -T {args}" arguments="-d 0 -w 128" />
+    <MinerOption name="cudaminer" path="miners\cudaminer\cudaminer.exe" argumentformat=" --url={host}:{port} --userpass={username}:{password} {args}" arguments="-H 2 -d 0 -i 1 -l auto -C 0" />
+  </MinerOptions>
+  <Pools>
+    <Pool name="50BTC" host="pool.50btc.com" port="8332" website="https://50btc.com/" />
+    <Pool name="ABCPool" host="pool.ABCPool.co" port="8332" website="http://www.abcpool.co/" />
+    <Pool name="Bit Arena" host="pool.bitarena.net" port="8332" website="https://www.bitarena.net/" />
+    <Pool name="Bit Clockers" host="pool.bitclockers.com" port="8332" website="http://bitclockers.com/" />
+    <Pool name="BitcoinPool" host="bitcoinpool.com" port="8334" website="http://bitcoinpool.com" />
+    <Pool name="BitLC" host="pool.bitlc.net" port="80" website="https://www.bitlc.net/" />
+    <Pool name="BitMinter" host="mint.bitminter.com" port="8332" website="https://bitminter.com/" />
+    <Pool name="BitParkingPool" host="mmpool.bitparking.com" port="15098" website="http://mmpool.bitparking.com/pool" />
+    <Pool name="BitPenny" host="bitpenny.dyndns-ip.com" port="8338" website="http://bitpenny.com/" />
+    <Pool name="BTC Canada" host="btccan.com" port="8337" website="https://btccan.com/" />
+    <Pool name="BTC Guild" host="btcguild.com" port="8332" website="http://www.btcguild.com" />
+    <Pool name="BTC Mine" host="btcmine.com" port="8332" website="http://btcmine.com/" />
+    <Pool name="BTC MP" host="rr.btcmp.com" port="8332" website="http://www.btcmp.com/" />
+    <Pool name="BTC Warp" host="www.btcwarp.com " port="8999" website="http://www.btcwarp.com/" />
+    <Pool name="Coinotron" host="coinotron.com" port="8322" website="http://coinotron.com/" />
+    <Pool name="DeepBit" host="pit.deepbit.net" port="8332" website="https://deepbit.net/" />
+    <Pool name="Ecki" host="miner.ecki.net" port="444" website="http://www.ecki.net" />
+    <Pool name="Eclipse Mining Consortium" host="us.eclipsemc.com" port="8332" website="https://eclipsemc.com/" />
+    <Pool name="Eligius" host="mining.eligius.st" port="8337" website="http://eligius.st/wiki/index.php/Eligius_mining_pool" />
+    <Pool name="Give-Me-Coins" host="ftc.give-me-coins.com" port="3336" website="http://www.give-me-coins.com" />
+    <Pool name="HH Terrible Tremendous MP" host="rpc.hhtt.1209k.com" port="8337" website="http://hhtt.1209k.com/" />
+    <Pool name="Itzod" host="pool.itzod.ru" port="8346" website="https://pool.itzod.ru/" />
+    <Pool name="Mt. Red" host="mtred.com" port="8337" website="https://mtred.com/" />
+    <Pool name="Max BTC" host="pool.maxbtc.com" port="8332" website="https://www.maxbtc.com/" />
+    <Pool name="Mkalinin.ru" host="pool.mkalinin.ru" port="8344" website="http://pool.mkalinin.ru/" />
+    <Pool name="OzCoin" host="us.ozco.in" port="8332" website="https://www.ozcoin.net/" />
+    <Pool name="PolMine" host="polmine.pl" port="8347" website="https://polmine.pl/?setlang=en" />
+    <Pool name="Slush's Pool" host="api.bitcoin.cz" port="8332" website="http://mining.bitcoin.cz/" />
+    <Pool name="TripleMining" host="eu.triplemining.com" port="8344" website="https://www.triplemining.com/" />
+    <Pool name="[Solo Mining]" host="localhost" port="8332" website="" />
+  </Pools>
+</BitMoose>
